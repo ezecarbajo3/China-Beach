@@ -831,6 +831,22 @@ main .section:nth-of-type(even) {
   max-width: 320px;
   text-align: center;
 }
+/* 🔥 RECOMMENDATIONS → -30% tamaño total */
+.recommendation-item {
+  padding: 22px 25px; /* antes 32px 36px aprox */
+}
+
+/* títulos */
+.recommendation-item h3 {
+  font-size: 1.4rem; /* antes ~2rem */
+}
+
+/* texto */
+.recommendation-item p {
+  font-size: 0.75rem; /* antes ~1.08rem */
+  line-height: 1.4;
+}
+
 }
 @media (max-width: 640px) {
   .container {
