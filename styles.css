@@ -106,13 +106,8 @@ a {
     );
 }
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at center, rgba(255, 222, 181, 0.06), transparent 36%);
-  pointer-events: none;
+  display: none;
 }
-
 .navbar {
   position: sticky;
   top: 70px;
