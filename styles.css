@@ -809,6 +809,28 @@ main .section:nth-of-type(even) {
     transform: scale(1.2);
   }
 }
+/* 🔥 CONTACT → achicar texto 30% */
+.contact-card h3 {
+  font-size: 1.3rem; /* antes ~1.9rem */
+}
+
+.contact-card p {
+  font-size: 0.75rem; /* antes ~1.08rem */
+  line-height: 1.5;
+}
+/* 🔥 CENTRAR BOTONES */
+.hero-actions {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  flex-direction: column; /* opcional: quedan uno abajo del otro */
+  gap: 14px;
+}
+.hero-actions .btn {
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
 }
 @media (max-width: 640px) {
   .container {
