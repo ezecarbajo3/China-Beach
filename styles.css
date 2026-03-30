@@ -686,10 +686,7 @@ main .section:nth-of-type(even) {
     padding: 10px 16px;
   }
 
-  .topbar-item:first-child {
-    display: none;
-  }
-
+  .topbar-item:first-child,
   .topbar-item.topbar-right {
     display: none;
   }
@@ -712,7 +709,7 @@ main .section:nth-of-type(even) {
   }
 
   .hero {
-    padding-top: 110px;
+    padding-top: 200px !important;
   }
 
   .navbar {
@@ -721,12 +718,10 @@ main .section:nth-of-type(even) {
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 24px);
-
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 18px;
-
     padding: 18px 18px 22px;
     border-radius: 36px;
     z-index: 100;
@@ -749,6 +744,7 @@ main .section:nth-of-type(even) {
 
   .hero-content {
     padding: 40px 0;
+    text-align: center !important;
   }
 
   .hero-content h1 {
@@ -760,6 +756,25 @@ main .section:nth-of-type(even) {
   .location-copy h2,
   .contact-copy h2 {
     font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  body,
+  .section,
+  .section-heading,
+  .about-copy,
+  .location-copy,
+  .contact-copy,
+  .menu-card,
+  .review-card,
+  .recommendation-item {
+    text-align: center !important;
+  }
+
+  .hero-actions,
+  .location-actions,
+  .contact-simple {
+    justify-content: center;
+    align-items: center;
   }
 
   .whatsapp-float,
@@ -784,32 +799,16 @@ main .section:nth-of-type(even) {
     width: 13px;
     height: 13px;
   }
-/* 🔥 CENTRAR TODO EL TEXTO */
-body,
-.section,
-.hero-content,
-.section-heading,
-.about-copy,
-.location-copy,
-.contact-copy,
-.menu-card,
-.review-card,
-.recommendation-item {
-  text-align: center !important;
-}
-  /* centrar contenido interno */
-.hero-actions,
-.location-actions,
-.contact-simple {
-  justify-content: center;
-  align-items: center;
-}
 
-  /* 🔥 empuja TODO el contenido debajo de la navbar */
-.hero {
-  padding-top: 200px !important;
+  .hero-logo {
+    margin-top: 140px !important;
+    margin-bottom: 20px;
+  }
+
+  .hero-logo img {
+    transform: scale(1.2);
+  }
 }
-  
 }
 @media (max-width: 640px) {
   .container {
