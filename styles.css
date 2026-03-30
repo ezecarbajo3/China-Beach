@@ -754,4 +754,28 @@ main .section:nth-of-type(even) {
   .hero-content {
     text-align: left;
   }
+
+  /* 🔥 FIX DEFINITIVO TEXTO DUPLICADO HERO */
+
+.hero h1,
+.hero h2,
+.hero p {
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.hero h1::before,
+.hero h1::after,
+.hero h2::before,
+.hero h2::after,
+.hero p::before,
+.hero p::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Por si hay animaciones o capas raras */
+.hero * {
+  animation: none !important;
+}
 }
