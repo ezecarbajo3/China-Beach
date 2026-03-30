@@ -51,8 +51,9 @@ a {
 /* TOPBAR */
 
 .topbar {
-  position: relative;
-  z-index: 40;
+  position: sticky;
+  top: 0;
+  z-index: 60;
   background: rgba(50, 29, 22, 0.72);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
