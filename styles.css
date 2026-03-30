@@ -167,8 +167,12 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 41px; /* +20% spacing */
   font-weight: 700;
+}
+
+.nav-links a {
+  font-size: 1.5rem; /* +50% tamaño */
 }
 
 .nav-links a:hover {
