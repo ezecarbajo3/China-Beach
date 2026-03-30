@@ -939,6 +939,51 @@ main .section:nth-of-type(even) {
   color: var(--muted);
 }
 
+/* 🔥 REDUCCIÓN GLOBAL DE TEXTO (menos navbar y botones) */
+
+.hero-content h1 {
+  font-size: 0.8em;
+}
+
+.hero-content h2 {
+  font-size: 0.8em;
+}
+
+.hero-description {
+  font-size: 0.8em;
+}
+
+.section-heading h2,
+.about-copy h2,
+.location-copy h2,
+.contact-copy h2 {
+  font-size: 0.8em;
+}
+
+.section-heading p,
+.about-copy p,
+.location-copy p,
+.contact-copy p,
+.menu-notes p,
+.review-card p {
+  font-size: 0.85em;
+}
+
+.menu-card h3 {
+  font-size: 0.85em;
+}
+
+.menu-card li {
+  font-size: 0.85em;
+}
+
+.recommendation-item h3 {
+  font-size: 0.85em;
+}
+
+.recommendation-item p {
+  font-size: 0.85em;
+}
 @media (max-width: 900px) {
   .recommendation-item {
     padding: 24px 22px;
