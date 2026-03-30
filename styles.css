@@ -694,9 +694,9 @@ main .section:nth-of-type(even) {
     font-size: 1.05rem;
   }
 
-  .hero-content {
-    padding-top: 76px;
-  }
+.hero-content {
+  padding: 40px 0;
+}
 
   .hero-content h1 {
     font-size: clamp(3.1rem, 14vw, 5rem);
