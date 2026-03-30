@@ -678,9 +678,27 @@ main .section:nth-of-type(even) {
 @media (max-width: 900px) {
 .topbar-inner {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* 🔥 centrado real */
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+  /* ❌ ocultar Reservation */
+.topbar-item:first-child {
+  display: none;
+}
+
+/* ❌ ocultar Visit Us */
+.topbar-item.topbar-right {
+  display: none;
+}
+
+/* ✅ centrar texto */
+.topbar-center {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  max-width: 280px;
 }
 
 .navbar {
