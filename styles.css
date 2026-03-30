@@ -579,6 +579,11 @@ main .section:nth-of-type(even) {
   align-items: start;
 }
 
+.contact-grid-top {
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: start;
+  margin-bottom: 28px;
+}
 .contact-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
