@@ -813,15 +813,49 @@ main .section:nth-of-type(even) {
 }
 
 /* BIGGER WHATSAPP BUTTON */
-.whatsapp-float {
-  min-height: 74px;
-  padding: 0 34px;
-  font-size: 1.9rem;
+.whatsapp-float,
+.maps-float {
+  position: fixed;
+  z-index: 70;
+  min-height: 96px;
+  padding: 0 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
   border-radius: 999px;
+  font-size: 2.25rem;
+  font-weight: 800;
+  box-shadow: 0 20px 40px rgba(15, 32, 17, 0.24);
+}
+
+.whatsapp-float {
   right: 28px;
   bottom: 28px;
+  background: #60d669;
+  color: #102513;
 }
-.contact-simple {
+
+.maps-float {
+  left: 28px;
+  bottom: 28px;
+  background: #f3d58f;
+  color: #342015;
+}
+
+.float-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+
+.float-icon svg {
+  width: 34px;
+  height: 34px;
+  display: block;
+}.contact-simple {
   width: 100%;
 }
 
