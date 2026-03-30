@@ -784,6 +784,27 @@ main .section:nth-of-type(even) {
     width: 13px;
     height: 13px;
   }
+/* 🔥 CENTRAR TODO EL TEXTO */
+body,
+.section,
+.hero-content,
+.section-heading,
+.about-copy,
+.location-copy,
+.contact-copy,
+.menu-card,
+.review-card,
+.recommendation-item {
+  text-align: center !important;
+}
+  /* centrar contenido interno */
+.hero-actions,
+.location-actions,
+.contact-simple {
+  justify-content: center;
+  align-items: center;
+}
+  
 }
 @media (max-width: 640px) {
   .container {
