@@ -668,12 +668,18 @@ main .section:nth-of-type(even) {
 }
 
 @media (max-width: 900px) {
-  .topbar-inner,
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
+.topbar-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 🔥 centrado real */
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
 
   .about-grid,
   .location-grid,
