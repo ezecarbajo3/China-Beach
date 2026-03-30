@@ -508,6 +508,12 @@ main .section:nth-of-type(even) {
   align-items: start;
 }
 
+.menu-full-layout-single {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+  margin: 28px auto 0;
+}
+
 .menu-image-wrap {
   padding: 18px;
 }
