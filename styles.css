@@ -678,19 +678,19 @@ main .section:nth-of-type(even) {
 }
 
 @media (max-width: 900px) {
-  .topbar-inner,
+.topbar-inner,
 .navbar,
 .form-row,
 .about-grid,
 .location-grid,
 .contact-grid,
+.contact-grid-top,
 .menu-full-layout,
 .menu-preview-grid,
 .reviews-grid,
 .about-grid-full {
   grid-template-columns: 1fr;
-}
-  .topbar-inner,
+}  .topbar-inner,
   .navbar {
     display: flex;
     flex-direction: column;
