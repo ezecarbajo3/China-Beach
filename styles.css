@@ -51,9 +51,8 @@ a {
 /* TOPBAR */
 
 .topbar {
-  position: sticky;
-  top: 0;
-  z-index: 60;
+  position: relative; /* 🔥 esto la libera */
+  z-index: 40;
   background: rgba(50, 29, 22, 0.72);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
