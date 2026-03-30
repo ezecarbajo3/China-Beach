@@ -614,17 +614,17 @@ a {
 
 @media (max-width: 900px) {
   .topbar-inner,
-  .navbar,
-  .form-row,
-  .about-grid,
-  .location-grid,
-  .contact-grid,
-  .menu-full-layout,
-  .menu-preview-grid,
-  .reviews-grid {
-    grid-template-columns: 1fr;
-  }
-
+.navbar,
+.form-row,
+.about-grid,
+.location-grid,
+.contact-grid,
+.menu-full-layout,
+.menu-preview-grid,
+.reviews-grid,
+.about-grid-full {
+  grid-template-columns: 1fr;
+}
   .topbar-inner,
   .navbar {
     display: flex;
