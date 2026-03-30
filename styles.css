@@ -166,10 +166,11 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 41px;
+  justify-content: center;
+  flex: 1;
+  gap: 56px; /* más aire */
   font-weight: 700;
 }
-
 .nav-links a {
   font-size: 1.2rem;
 }
