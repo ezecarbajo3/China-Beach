@@ -632,13 +632,7 @@ main .section:nth-of-type(even) {
 
 .hero-logo img {
   width: min(520px, 65%);
-  height: auto;
-  object-fit: contain;
-
-  /* clave para PNG sin fondo */
-  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.35));
-
-  pointer-events: none;
+  transform: scale(1.4); /* zoom para eliminar aire */
 }
 .menu-full-button-wrap {
   display: flex;
