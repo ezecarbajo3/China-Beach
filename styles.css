@@ -866,5 +866,32 @@ main .section:nth-of-type(even) {
 .contact-simple .contact-card {
   width: 100%;
 }
-  
+ @media (max-width: 900px) {
+  .contact-cards-two {
+    grid-template-columns: 1fr;
+  }
+
+  .whatsapp-float,
+  .maps-float {
+    min-height: 78px;
+    padding: 0 28px;
+    font-size: 1.55rem;
+  }
+
+  .whatsapp-float {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .maps-float {
+    left: 18px;
+    bottom: 18px;
+  }
+
+  .float-icon,
+  .float-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+} 
 }
