@@ -618,8 +618,10 @@ main .section:nth-of-type(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 28px;
-  margin-bottom: -10px;
+
+  margin-top: 90px;
+  margin-bottom: 70px;
+
   position: relative;
   z-index: 2;
 }
