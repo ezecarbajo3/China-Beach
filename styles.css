@@ -821,4 +821,16 @@ main .section:nth-of-type(even) {
   right: 28px;
   bottom: 28px;
 }
+.contact-simple {
+  width: 100%;
+}
+
+.contact-simple .contact-cards {
+  width: 100%;
+}
+
+.contact-simple .contact-card {
+  width: 100%;
+}
+  
 }
