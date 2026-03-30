@@ -118,10 +118,10 @@ a {
     );
 }
 .navbar {
-  position: fixed; /* 🔥 clave */
-  top: 16px;
+  position: fixed;
+  top: 86px; /* 🔥 debajo de la topbar */
   left: 50%;
-  transform: translateX(-50%); /* centrarla */
+  transform: translateX(-50%);
 
   width: min(calc(100% - 48px), var(--container));
 
