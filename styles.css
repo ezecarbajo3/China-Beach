@@ -583,14 +583,21 @@ a {
 
 @media (max-width: 1180px) {
   .about-grid,
-  .location-grid,
-  .contact-grid,
-  .menu-full-layout,
-  .menu-preview-grid,
-  .reviews-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.location-grid,
+.contact-grid,
+.menu-full-layout,
+.menu-preview-grid,
+.reviews-grid {
+  grid-template-columns: 1fr 1fr;
+}
 
+.about-grid-full {
+  grid-template-columns: 1fr;
+}
+
+.reviews-grid {
+  grid-template-columns: 1fr 1fr;
+}
   .feature-cards,
   .contact-cards {
     grid-template-columns: 1fr;
