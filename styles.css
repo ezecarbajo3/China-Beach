@@ -598,14 +598,14 @@ main .section:nth-of-type(even) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 17px;
+  height: 17px;
 }
 
 .float-icon svg {
   display: block;
-  width: 34px;
-  height: 34px;
+  width: 17px;
+  height: 17px;
 }
 
 /* RESPONSIVE */
