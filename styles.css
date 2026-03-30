@@ -289,6 +289,10 @@ a {
   align-items: start;
 }
 
+.about-grid-full {
+  grid-template-columns: 1fr;
+}
+
 .card,
 .menu-card,
 .review-card {
