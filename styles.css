@@ -106,11 +106,7 @@ a {
 .hero {
   position: relative;
   min-height: 88vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* 🔥 centra TODO verticalmente */
-
+  padding-top: 140px;
   background:
     linear-gradient(rgba(92, 60, 47, 0.96), rgba(74, 47, 37, 0.97)),
     repeating-linear-gradient(
