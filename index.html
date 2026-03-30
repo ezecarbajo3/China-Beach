@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
   <title>China Beach - Wok On The Beach</title>
   <meta
     name="description"
-    content="Kosher Chinese cuisine in Miami Beach. Explore the menu, location, reviews, and contact details for China Beach - Wok On The Beach."
+    content="Kosher Chinese cuisine in Miami Beach. Explore the menu, reviews, location, and contact details for China Beach - Wok On The Beach."
   />
+  <meta name="theme-color" content="#6f4c3e" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -21,15 +25,20 @@
     <div class="container topbar-inner">
       <div class="topbar-item">
         <span class="topbar-label">Reservation</span>
-        <a href="tel:+13055343034">+1 305-534-3034</a>
+        <a href="tel:+13055343034" aria-label="Call China Beach at +1 305 534 3034">
+          +1 305-534-3034
+        </a>
       </div>
+
       <div class="topbar-center">Authentic kosher Chinese cuisine in Miami Beach</div>
+
       <div class="topbar-item topbar-right">
         <span class="topbar-label">Visit Us</span>
         <a
           href="https://maps.google.com/?q=3919+Alton+Rd,+Miami+Beach,+FL+33140"
           target="_blank"
           rel="noopener"
+          aria-label="Open China Beach location in Google Maps"
         >
           3919 Alton Rd, Miami Beach, FL 33140
         </a>
@@ -37,97 +46,117 @@
     </div>
   </div>
 
-  <header class="hero">
-  <div class="container">
-    <nav class="navbar">
-      <a href="#home" class="brand">
-        <div class="brand-mark">CB</div>
-        <div class="brand-text">
-          <span>China Beach</span>
-          <small>Wok On The Beach</small>
+  <header class="hero" id="home">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="#home" class="brand" aria-label="Go to homepage section">
+          <div class="brand-mark" aria-hidden="true">CB</div>
+          <div class="brand-text">
+            <span>China Beach</span>
+            <small>Wok On The Beach</small>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
         </div>
-      </a>
 
-      <div class="nav-links">
-  <a href="#about">About</a>
-  <a href="#menu">Menu</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#location">Location</a>
-  <a href="#contact">Contact</a>
-</div>
-      <a class="btn btn-gold nav-cta" href="tel:+13055343034">Reserve</a>
-    </nav>
+        <a
+          class="btn btn-gold nav-cta"
+          href="tel:+13055343034"
+          aria-label="Reserve by phone"
+        >
+          Reserve
+        </a>
+      </nav>
 
-    <section id="home" class="hero-content">
-      <p class="eyebrow">Authentic Kosher Cuisine</p>
-      <h1>A Taste of Tradition</h1>
-      <h2>Indulge in delicious</h2>
-      <p class="hero-description">
-        Kosher Chinese dishes like Mongolian Beef and Beef Broccoli made with fresh
-        ingredients, warm service, and a neighborhood atmosphere that feels easy to trust.
-      </p>
+      <section class="hero-content" aria-labelledby="hero-title">
+        <p class="eyebrow">Authentic Kosher Cuisine</p>
+        <h1 id="hero-title">A Taste of Tradition</h1>
+        <h2>Indulge in delicious</h2>
+        <p class="hero-description">
+          Kosher Chinese dishes like Mongolian Beef and Beef Broccoli made with fresh
+          ingredients, warm service, and a neighborhood atmosphere that feels easy to trust.
+        </p>
 
-      <div class="hero-actions">
-        <a class="btn btn-gold" href="tel:+13055343034">Get a Reservation Now</a>
-        <a class="btn btn-dark" href="#menu">Explore the Menu</a>
-      </div>
-    </section>
-  </div>
-</header>
-  <main>
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-grid about-grid about-grid-full">
-  <div class="about-copy card">
-    <p class="eyebrow">About</p>
-    <h2>China Beach - Wok On The Beach</h2>
-
-    <p>
-      Welcome to China Beach - Wok On The Beach, a kosher Chinese restaurant
-      located at 3919 Alton Rd in Miami Beach. The concept blends familiar
-      Chinese comfort dishes with kosher standards, fresh preparation, and an
-      approachable neighborhood atmosphere.
-    </p>
-
-    <p>
-      The current brand identity already communicates a few strong things:
-      authentic flavor, generous portions, warm service, and practical convenience
-      for dine-in, takeout, and delivery.
-    </p>
-
-    <p>
-      Signature references from the current site include favorites such as
-      Mongolian Duo, Beef and Broccoli Duo, Sesame Duo, Orange Peel Duo, fried rice,
-      lo mein noodles, soups, salads, vegetable dishes, and simple sides that make
-      the menu feel broad without losing focus.
-    </p>
-
-    <div class="feature-cards">
-      <article class="feature-card">
-        <h3>✡ Kosher</h3>
-        <p>Chinese comfort cuisine with a respectful, trustworthy brand tone.</p>
-      </article>
-
-      <article class="feature-card">
-        <h3>✦ Fresh</h3>
-        <p>Dishes built around freshness, speed, and consistent execution.</p>
-      </article>
-
-      <article class="feature-card">
-        <h3>📍 Local</h3>
-        <p>Convenient Miami Beach location for regular guests and takeout orders.</p>
-      </article>
+        <div class="hero-actions">
+          <a
+            class="btn btn-gold"
+            href="tel:+13055343034"
+            aria-label="Call now to reserve a table"
+          >
+            Get a Reservation Now
+          </a>
+          <a
+            class="btn btn-dark"
+            href="#menu"
+            aria-label="Go to menu section"
+          >
+            Explore the Menu
+          </a>
+        </div>
+      </section>
     </div>
-  </div>
-</div>
+  </header>
+
+  <main>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-grid about-grid">
+          <div class="about-copy card">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">China Beach - Wok On The Beach</h2>
+
+            <p>
+              Welcome to China Beach - Wok On The Beach, a kosher Chinese restaurant
+              located at 3919 Alton Rd in Miami Beach. The concept blends familiar
+              Chinese comfort dishes with kosher standards, fresh preparation, and an
+              approachable neighborhood atmosphere.
+            </p>
+
+            <p>
+              The current brand identity already communicates a few strong things:
+              authentic flavor, generous portions, warm service, and practical convenience
+              for dine-in, takeout, and delivery.
+            </p>
+
+            <p>
+              Signature references from the current site include favorites such as
+              Mongolian Duo, Beef and Broccoli Duo, Sesame Duo, Orange Peel Duo, fried rice,
+              lo mein noodles, soups, salads, vegetable dishes, and simple sides that make
+              the menu feel broad without losing focus.
+            </p>
+
+            <div class="feature-cards">
+              <article class="feature-card">
+                <h3>✡ Kosher</h3>
+                <p>Chinese comfort cuisine with a respectful, trustworthy brand tone.</p>
+              </article>
+
+              <article class="feature-card">
+                <h3>✦ Fresh</h3>
+                <p>Dishes built around freshness, speed, and consistent execution.</p>
+              </article>
+
+              <article class="feature-card">
+                <h3>📍 Local</h3>
+                <p>Convenient Miami Beach location for regular guests and takeout orders.</p>
+              </article>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="menu" class="section">
+    <section id="menu" class="section" aria-labelledby="menu-title">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Menu</p>
-          <h2>Signature dishes and current house favorites</h2>
+          <h2 id="menu-title">Signature dishes and current house favorites</h2>
           <p>
             A cleaner digital presentation of the menu, while keeping the real flavor and
             structure of the current restaurant offering.
@@ -136,219 +165,248 @@
 
         <div class="menu-preview-grid">
           <article class="menu-card">
-  <h3>Appetizers</h3>
-  <ul>
-    <li><span>Pastrami Egg Roll</span><strong>$5.95</strong></li>
-    <li><span>Vegetable Egg Roll</span><strong>$4.95</strong></li>
-    <li><span>Crispy Chicken Wings</span><strong>$9.95</strong></li>
-    <li><span>Lettuce Wraps</span><strong>$11.95</strong></li>
-  </ul>
-</article>
+            <h3>Appetizers</h3>
+            <ul>
+              <li><span>Pastrami Egg Roll</span><strong>$5.95</strong></li>
+              <li><span>Vegetable Egg Roll</span><strong>$4.95</strong></li>
+              <li><span>Crispy Chicken Wings</span><strong>$9.95</strong></li>
+              <li><span>Lettuce Wraps</span><strong>$11.95</strong></li>
+            </ul>
+          </article>
 
-<article class="menu-card">
-  <h3>Noodles & Rice</h3>
-  <ul>
-    <li><span>Street Noodles</span><strong>$17.95</strong></li>
-    <li><span>Lo Mein Noodles</span><strong>$17.95</strong></li>
-    <li><span>Fried Rice</span><strong>$12.95</strong></li>
-    <li><span>Wonton Soup</span><strong>$5.45</strong></li>
-  </ul>
-</article>
+          <article class="menu-card">
+            <h3>Noodles &amp; Rice</h3>
+            <ul>
+              <li><span>Street Noodles</span><strong>$17.95</strong></li>
+              <li><span>Lo Mein Noodles</span><strong>$17.95</strong></li>
+              <li><span>Fried Rice</span><strong>$12.95</strong></li>
+              <li><span>Wonton Soup</span><strong>$5.45</strong></li>
+            </ul>
+          </article>
 
-<article class="menu-card">
-  <h3>House Specialties</h3>
-  <ul>
-    <li><span>Beef & Mushroom Duo</span><strong>$24.75</strong></li>
-    <li><span>Mongolian Duo</span><strong>$24.75</strong></li>
-    <li><span>Orange Peel Duo</span><strong>$24.75</strong></li>
-    <li><span>Beef & Broccoli Duo</span><strong>$24.75</strong></li>
-  </ul>
-</article>
+          <article class="menu-card">
+            <h3>House Specialties</h3>
+            <ul>
+              <li><span>Beef &amp; Mushroom Duo</span><strong>$24.75</strong></li>
+              <li><span>Mongolian Duo</span><strong>$24.75</strong></li>
+              <li><span>Orange Peel Duo</span><strong>$24.75</strong></li>
+              <li><span>Beef &amp; Broccoli Duo</span><strong>$24.75</strong></li>
+            </ul>
+          </article>
 
-<article class="menu-card">
-  <h3>Fresh Options</h3>
-  <ul>
-    <li><span>Oriental Chicken Salad</span><strong>$14.95</strong></li>
-    <li><span>Oriental Salad</span><strong>$13.95</strong></li>
-    <li><span>Chinese Mixed Vegetables</span><strong>$14.95</strong></li>
-    <li><span>Mu Shu Vegetables</span><strong>$16.95</strong></li>
-  </ul>
-</article>
+          <article class="menu-card">
+            <h3>Fresh Options</h3>
+            <ul>
+              <li><span>Oriental Chicken Salad</span><strong>$14.95</strong></li>
+              <li><span>Oriental Salad</span><strong>$13.95</strong></li>
+              <li><span>Chinese Mixed Vegetables</span><strong>$14.95</strong></li>
+              <li><span>Mu Shu Vegetables</span><strong>$16.95</strong></li>
+            </ul>
+          </article>
         </div>
 
-       <div class="menu-full-layout menu-full-layout-full">
-  <div class="menu-notes card">
-    <p class="eyebrow">Featured Notes</p>
-    <h3>Explore the full menu only when you want to.</h3>
-    <p>
-      The complete menu is available through the button below, keeping the page cleaner,
-      easier to scan, and more focused on the restaurant presentation.
-    </p>
+        <div class="menu-full-layout">
+          <div class="menu-notes card">
+            <p class="eyebrow">Featured Notes</p>
+            <h3>Explore the full menu only when you want to.</h3>
+            <p>
+              The complete menu is available through the button below, keeping the page cleaner,
+              easier to scan, and more focused on the restaurant presentation.
+            </p>
 
-    <div class="hero-actions">
-      <a class="btn btn-gold" href="menu-full.png" target="_blank" rel="noopener">View full menu</a>
-      <a class="btn btn-dark" href="https://wa.me/542236184003" target="_blank" rel="noopener">Ask about special orders</a>
-    </div>
-  </div>
-</div>
+            <div class="hero-actions">
+              <a
+                class="btn btn-gold"
+                href="menu-full.png"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open full menu image"
+              >
+                View full menu
+              </a>
+              <a
+                class="btn btn-dark"
+                href="https://wa.me/542236184003"
+                target="_blank"
+                rel="noopener"
+                aria-label="Ask about special orders on WhatsApp"
+              >
+                Ask about special orders
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="reviews" class="section">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow">Reviews</p>
-      <h2>What guests are saying</h2>
-      <p>
-        Real praise focused on freshness, portions, service, takeout convenience, and
-        the comfort-food appeal of the kitchen.
-      </p>
-    </div>
+    <section id="reviews" class="section" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Reviews</p>
+          <h2 id="reviews-title">What guests are saying</h2>
+          <p>
+            Real praise focused on freshness, portions, service, takeout convenience, and
+            the comfort-food appeal of the kitchen.
+          </p>
+        </div>
 
-    <div class="reviews-grid">
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“Kosher Chinese food is outstanding here. Great for takeout.”</p>
-        <strong>Josh Meir</strong>
-      </article>
+        <div class="reviews-grid">
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Kosher Chinese food is outstanding here. Great for takeout.”</p>
+            <strong>Josh Meir</strong>
+          </article>
 
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“Excellent kosher Chinese restaurant. The food is tasty and prepared fresh by the owner and staff.”</p>
-        <strong>Edward “Ed” Abraham</strong>
-      </article>
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Excellent kosher Chinese restaurant. The food is tasty and prepared fresh by the owner and staff.”</p>
+            <strong>Edward “Ed” Abraham</strong>
+          </article>
 
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“Food was very good. Would definitely order again.”</p>
-        <strong>Steve Halper</strong>
-      </article>
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Food was very good. Would definitely order again.”</p>
+            <strong>Steve Halper</strong>
+          </article>
 
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“The food was so fresh and everyone loved it. The service was great and the lady serving us was very nice.”</p>
-        <strong>Sarah L</strong>
-      </article>
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“The food was so fresh and everyone loved it. The service was great and the lady serving us was very nice.”</p>
+            <strong>Sarah L</strong>
+          </article>
 
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“Not a fancy restaurant at all and very easy to pass up based on its look. The food however was amazing.”</p>
-        <strong>Sara Livian</strong>
-      </article>
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Not a fancy restaurant at all and very easy to pass up based on its look. The food however was amazing.”</p>
+            <strong>Sara Livian</strong>
+          </article>
 
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“This is my favorite for kosher takeout. The portions are huge and the owners are sweet and helpful.”</p>
-        <strong>Samantha Katz</strong>
-      </article>
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“This is my favorite for kosher takeout. The portions are huge and the owners are sweet and helpful.”</p>
+            <strong>Samantha Katz</strong>
+          </article>
 
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“Very generous portions, fast service, and a really warm atmosphere. We would absolutely come back.”</p>
-        <strong>Daniel Rosen</strong>
-      </article>
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Very generous portions, fast service, and a really warm atmosphere. We would absolutely come back.”</p>
+            <strong>Daniel Rosen</strong>
+          </article>
 
-      <article class="review-card card">
-        <div class="stars">★★★★★</div>
-        <p>“Fresh food, friendly people, and a menu with plenty of options. A solid neighborhood spot in Miami Beach.”</p>
-        <strong>Leah Bernstein</strong>
-      </article>
-    </div>
-  </div>
-</section>
-    <section id="location" class="section">
-  <div class="container">
-    <div class="location-grid">
-      <div class="location-copy">
-        <p class="eyebrow">Location</p>
-        <h2>3919 Alton Rd, Miami Beach, FL 33140</h2>
-        <p>
-          A practical neighborhood location with easy access for dine-in, pickup,
-          delivery, and repeat local customers.
-        </p>
-
-        <div class="location-actions">
-          <a
-            class="btn btn-gold"
-            href="https://maps.google.com/?q=3919+Alton+Rd,+Miami+Beach,+FL+33140"
-            target="_blank"
-            rel="noopener"
-          >
-            Open in Maps
-          </a>
-          <a class="btn btn-dark" href="tel:+13055343034">Call the restaurant</a>
+          <article class="review-card card">
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <p>“Fresh food, friendly people, and a menu with plenty of options. A solid neighborhood spot in Miami Beach.”</p>
+            <strong>Leah Bernstein</strong>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="map-card card">
-        <iframe
-          title="China Beach map"
-          src="https://www.google.com/maps?q=3919+Alton+Rd,+Miami+Beach,+FL+33140&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-    <section id="contact" class="section">
-  <div class="container">
-    <div class="contact-simple">
-      <div class="contact-copy contact-copy-full">
-        <p class="eyebrow">Contact</p>
-        <h2>Simple ways to reserve, ask, or follow up.</h2>
-        <p>
-          Call directly for reservations or send a WhatsApp message for a fast and easy follow-up.
-        </p>
-      </div>
+    <section id="location" class="section" aria-labelledby="location-title">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-copy">
+            <p class="eyebrow">Location</p>
+            <h2 id="location-title">3919 Alton Rd, Miami Beach, FL 33140</h2>
+            <p>
+              A practical neighborhood location with easy access for dine-in, pickup,
+              delivery, and repeat local customers.
+            </p>
 
-      <div class="contact-cards contact-cards-two">
-        <article class="contact-card card">
-          <p class="eyebrow">Reservation</p>
-          <h3>+1 305-534-3034</h3>
-          <p>
-            Call directly for reservations or send a WhatsApp message for quick and convenient contact.
-          </p>
-        </article>
+            <div class="location-actions">
+              <a
+                class="btn btn-gold"
+                href="https://maps.google.com/?q=3919+Alton+Rd,+Miami+Beach,+FL+33140"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open restaurant location in Google Maps"
+              >
+                Open in Maps
+              </a>
+              <a
+                class="btn btn-dark"
+                href="tel:+13055343034"
+                aria-label="Call the restaurant"
+              >
+                Call the restaurant
+              </a>
+            </div>
+          </div>
 
-        <article class="contact-card card">
-          <p class="eyebrow">Address</p>
-          <h3>3919 Alton Rd, Miami Beach, FL 33140</h3>
-          <p>
-            Easy to visit and easy to share with guests or delivery drivers.
-          </p>
-        </article>
+          <div class="map-card card">
+            <iframe
+              title="China Beach map"
+              src="https://www.google.com/maps?q=3919+Alton+Rd,+Miami+Beach,+FL+33140&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-simple">
+          <div class="contact-copy contact-copy-full">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Simple ways to reserve, ask, or follow up.</h2>
+            <p>
+              Call directly for reservations or send a WhatsApp message for a fast and easy follow-up.
+            </p>
+          </div>
+
+          <div class="contact-cards contact-cards-two">
+            <article class="contact-card card">
+              <p class="eyebrow">Reservation</p>
+              <h3>+1 305-534-3034</h3>
+              <p>
+                Call directly for reservations or send a WhatsApp message for quick and convenient contact.
+              </p>
+            </article>
+
+            <article class="contact-card card">
+              <p class="eyebrow">Address</p>
+              <h3>3919 Alton Rd, Miami Beach, FL 33140</h3>
+              <p>
+                Easy to visit and easy to share with guests or delivery drivers.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
- <a
-  class="maps-float"
-  href="https://maps.google.com/?q=3919+Alton+Rd,+Miami+Beach,+FL+33140"
-  target="_blank"
-  rel="noopener"
-  aria-label="Open location in Google Maps"
->
-  <span class="float-icon">📍</span>
-  <span>Maps</span>
-</a>
+  <a
+    class="maps-float"
+    href="https://maps.google.com/?q=3919+Alton+Rd,+Miami+Beach,+FL+33140"
+    target="_blank"
+    rel="noopener"
+    aria-label="Open location in Google Maps"
+    title="Open in Maps"
+  >
+    <span class="float-icon" aria-hidden="true">📍</span>
+    <span>Maps</span>
+  </a>
 
-<a
-  class="whatsapp-float"
-  href="https://wa.me/542236184003"
-  target="_blank"
-  rel="noopener"
-  aria-label="Chat on WhatsApp"
->
-  <span class="float-icon">
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-      <path fill="currentColor" d="M19.11 17.21c-.27-.13-1.58-.78-1.82-.87-.24-.09-.42-.13-.6.13-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.14-1.3-.79-.7-1.33-1.56-1.49-1.82-.16-.27-.02-.41.12-.54.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.6-1.45-.82-1.98-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22s.96 2.58 1.09 2.76c.13.18 1.89 2.89 4.58 4.05.64.27 1.14.43 1.53.55.64.2 1.22.17 1.68.1.51-.08 1.58-.65 1.8-1.28.22-.63.22-1.17.16-1.28-.07-.11-.24-.18-.51-.31z"/>
-      <path fill="currentColor" d="M16.02 3.2C8.96 3.2 3.23 8.89 3.23 15.9c0 2.24.59 4.43 1.71 6.36L3.1 28.8l6.73-1.76a12.9 12.9 0 0 0 6.19 1.57h.01c7.05 0 12.78-5.69 12.78-12.71 0-3.4-1.34-6.6-3.79-9.01A12.8 12.8 0 0 0 16.02 3.2zm0 23.28h-.01a10.7 10.7 0 0 1-5.45-1.49l-.39-.23-3.99 1.04 1.07-3.88-.25-.4a10.55 10.55 0 0 1-1.63-5.62c0-5.88 4.82-10.66 10.74-10.66 2.87 0 5.57 1.11 7.59 3.12a10.57 10.57 0 0 1 3.15 7.54c0 5.88-4.82 10.67-10.73 10.67z"/>
-    </svg>
-  </span>
-  <span>WhatsApp</span>
-</a>  <script src="script.js"></script>
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/542236184003"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    <span class="float-icon" aria-hidden="true">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M19.11 17.21c-.27-.13-1.58-.78-1.82-.87-.24-.09-.42-.13-.6.13-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.14-1.3-.79-.7-1.33-1.56-1.49-1.82-.16-.27-.02-.41.12-.54.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.6-1.45-.82-1.98-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22s.96 2.58 1.09 2.76c.13.18 1.89 2.89 4.58 4.05.64.27 1.14.43 1.53.55.64.2 1.22.17 1.68.1.51-.08 1.58-.65 1.8-1.28.22-.63.22-1.17.16-1.28-.07-.11-.24-.18-.51-.31z"/>
+        <path fill="currentColor" d="M16.02 3.2C8.96 3.2 3.23 8.89 3.23 15.9c0 2.24.59 4.43 1.71 6.36L3.1 28.8l6.73-1.76a12.9 12.9 0 0 0 6.19 1.57h.01c7.05 0 12.78-5.69 12.78-12.71 0-3.4-1.34-6.6-3.79-9.01A12.8 12.8 0 0 0 16.02 3.2zm0 23.28h-.01a10.7 10.7 0 0 1-5.45-1.49l-.39-.23-3.99 1.04 1.07-3.88-.25-.4a10.55 10.55 0 0 1-1.63-5.62c0-5.88 4.82-10.66 10.74-10.66 2.87 0 5.57 1.11 7.59 3.12a10.57 10.57 0 0 1 3.15 7.54c0 5.88-4.82 10.67-10.73 10.67z"/>
+      </svg>
+    </span>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
