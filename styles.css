@@ -51,8 +51,7 @@ a {
 /* TOPBAR */
 
 .topbar {
-  position: sticky;
-  top: 0;
+  position: relative; /* 🔥 deja de ser sticky */
   z-index: 40;
   background: rgba(50, 29, 22, 0.72);
   border-bottom: 1px solid var(--border);
