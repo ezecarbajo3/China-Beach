@@ -678,10 +678,10 @@ main .section:nth-of-type(even) {
   }
 
   .float-icon,
-  .float-icon svg {
-    width: 26px;
-    height: 26px;
-  }
+.float-icon svg {
+  width: 13px;
+  height: 13px;
+}
 }
 
 @media (max-width: 640px) {
