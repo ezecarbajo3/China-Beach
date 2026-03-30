@@ -487,13 +487,13 @@ main .section:nth-of-type(even) {
 }
 
 .menu-card li {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   gap: 16px;
   padding: 14px 0;
   border-bottom: 1px solid rgba(255, 240, 225, 0.08);
 }
-
 .menu-card li:last-child {
   border-bottom: 0;
 }
