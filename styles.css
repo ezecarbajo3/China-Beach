@@ -96,10 +96,15 @@ a {
   position: relative;
   min-height: 88vh;
   background:
-    linear-gradient(rgba(58, 34, 26, 0.68), rgba(58, 34, 26, 0.82)),
-    url("hero.jpg") center/cover no-repeat;
+    linear-gradient(rgba(92, 60, 47, 0.96), rgba(74, 47, 37, 0.97)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 236, 210, 0.02) 0px,
+      rgba(255, 236, 210, 0.02) 2px,
+      rgba(60, 32, 22, 0.035) 2px,
+      rgba(60, 32, 22, 0.035) 10px
+    );
 }
-
 .hero-overlay {
   position: absolute;
   inset: 0;
