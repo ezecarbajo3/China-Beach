@@ -284,6 +284,9 @@ a {
   margin-top: 28px;
 }
 
+.hero-tags {
+  display: none;
+}
 .hero-tags span,
 .menu-tags span {
   padding: 13px 18px;
