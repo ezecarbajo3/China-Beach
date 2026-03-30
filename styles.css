@@ -644,179 +644,10 @@ main .section:nth-of-type(even) {
   color: rgba(247, 240, 232, 0.52);
 }
 
-.whatsapp-float {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 60;
-  min-height: 58px;
-  padding: 0 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: #60d669;
-  color: #102513;
-  font-weight: 800;
-  box-shadow: 0 20px 40px rgba(15, 32, 17, 0.24);
-}
-
-@media (max-width: 1180px) {
-  .about-grid,
-.location-grid,
-.contact-grid,
-.menu-full-layout,
-.menu-preview-grid,
-.reviews-grid {
-  grid-template-columns: 1fr 1fr;
-}
-
-.about-grid-full {
-  grid-template-columns: 1fr;
-}
-
-.reviews-grid {
-  grid-template-columns: 1fr 1fr;
-}
-  .feature-cards,
-  .contact-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .about-visuals {
-    grid-template-columns: 1fr;
-  }
-
-  .tall-card {
-    min-height: 320px;
-  }
-}
-
-@media (max-width: 900px) {
-.topbar-inner,
-.navbar,
-.form-row,
-.about-grid,
-.location-grid,
-.contact-grid,
-.contact-grid-top,
-.menu-full-layout,
-.menu-preview-grid,
-.reviews-grid,
-.about-grid-full,
-.contact-cards-two {
-  grid-template-columns: 1fr;
-}.topbar-inner,
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .nav-links {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 18px;
-  }
-
-  .hero-content {
-    padding-top: 76px;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(3.1rem, 14vw, 5rem);
-  }
-
-  .section-heading h2,
-  .about-copy h2,
-  .location-copy h2,
-  .contact-copy h2 {
-    font-size: clamp(2.5rem, 10vw, 4rem);
-  }
-}
-
-@media (max-width: 640px) {
-  .container {
-    width: min(calc(100% - 28px), var(--container));
-  }
-
-  .navbar {
-    padding: 16px;
-    border-radius: 28px;
-  }
-
-  .brand-mark {
-    width: 62px;
-    height: 62px;
-    font-size: 1.7rem;
-  }
-
-  .hero-tags,
-  .hero-actions,
-  .menu-tags,
-  .location-actions {
-    justify-content: flex-start;
-  }
-
-  .hero-content {
-    text-align: left;
-  }
-
-  /* 🔥 FIX DEFINITIVO TEXTO DUPLICADO HERO */
-
-.hero h1,
-.hero h2,
-.hero p {
-  text-shadow: none !important;
-  filter: none !important;
-}
-
-.hero h1::before,
-.hero h1::after,
-.hero h2::before,
-.hero h2::after,
-.hero p::before,
-.hero p::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* Por si hay animaciones o capas raras */
-.hero * {
-  animation: none !important;
-}
-  /* CONTACT SIMPLIFIED */
-.contact-simple {
-  display: grid;
-  gap: 28px;
-}
-
-.contact-copy-full {
-  max-width: 920px;
-}
-
-.contact-cards-two {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  width: 100%;
-  max-width: 100%;
-  margin-top: 0;
-  gap: 24px;
-}
-.contact-cards-two .contact-card {
-  min-height: 260px;
-}
-
-.contact-cards-two .contact-card h3 {
-  font-size: 1.9rem;
-  line-height: 1.15;
-}
-
-/* BIGGER WHATSAPP BUTTON */
 .whatsapp-float,
 .maps-float {
   position: fixed;
-  z-index: 70;
+  z-index: 9999;
   min-height: 96px;
   padding: 0 42px;
   display: inline-flex;
@@ -826,8 +657,8 @@ main .section:nth-of-type(even) {
   border-radius: 999px;
   font-size: 2.25rem;
   font-weight: 800;
-  box-shadow: 0 20px 40px rgba(15, 32, 17, 0.24);
   text-decoration: none;
+  box-shadow: 0 20px 40px rgba(15, 32, 17, 0.24);
 }
 
 .whatsapp-float {
@@ -857,8 +688,56 @@ main .section:nth-of-type(even) {
   height: 34px;
   display: block;
 }
-  .contact-simple {
+
+/* FIX DEFINITIVO TEXTO DUPLICADO HERO */
+.hero h1,
+.hero h2,
+.hero p {
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.hero h1::before,
+.hero h1::after,
+.hero h2::before,
+.hero h2::after,
+.hero p::before,
+.hero p::after {
+  content: none !important;
+  display: none !important;
+}
+
+.hero * {
+  animation: none !important;
+}
+
+/* CONTACT SIMPLIFIED */
+.contact-simple {
+  display: grid;
+  gap: 28px;
   width: 100%;
+}
+
+.contact-copy-full {
+  max-width: 920px;
+}
+
+.contact-cards-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  gap: 24px;
+}
+
+.contact-cards-two .contact-card {
+  min-height: 260px;
+}
+
+.contact-cards-two .contact-card h3 {
+  font-size: 1.9rem;
+  line-height: 1.15;
 }
 
 .contact-simple .contact-cards {
@@ -868,37 +747,49 @@ main .section:nth-of-type(even) {
 .contact-simple .contact-card {
   width: 100%;
 }
- @media (max-width: 900px) {
+
+@media (max-width: 900px) {
+  .topbar-inner,
+  .navbar,
+  .form-row,
+  .about-grid,
+  .location-grid,
+  .contact-grid,
+  .contact-grid-top,
+  .menu-full-layout,
+  .menu-preview-grid,
+  .reviews-grid,
+  .about-grid-full,
   .contact-cards-two {
     grid-template-columns: 1fr;
   }
 
-  .whatsapp-float,
-  .maps-float {
-    min-height: 78px;
-    padding: 0 28px;
-    font-size: 1.55rem;
+  .topbar-inner,
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .whatsapp-float {
-    right: 18px;
-    bottom: 18px;
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
   }
 
-  .maps-float {
-    left: 18px;
-    bottom: 18px;
+  .hero-content {
+    padding-top: 76px;
   }
 
-  .float-icon,
-  .float-icon svg {
-    width: 26px;
-    height: 26px;
+  .hero-content h1 {
+    font-size: clamp(3.1rem, 14vw, 5rem);
   }
-} 
-  @media (max-width: 900px) {
-  .contact-cards-two {
-    grid-template-columns: 1fr;
+
+  .section-heading h2,
+  .about-copy h2,
+  .location-copy h2,
+  .contact-copy h2 {
+    font-size: clamp(2.5rem, 10vw, 4rem);
   }
 
   .whatsapp-float,
@@ -924,4 +815,31 @@ main .section:nth-of-type(even) {
     height: 26px;
   }
 }
+
+@media (max-width: 640px) {
+  .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .navbar {
+    padding: 16px;
+    border-radius: 28px;
+  }
+
+  .brand-mark {
+    width: 62px;
+    height: 62px;
+    font-size: 1.7rem;
+  }
+
+  .hero-tags,
+  .hero-actions,
+  .menu-tags,
+  .location-actions {
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
 }
