@@ -614,6 +614,27 @@ main .section:nth-of-type(even) {
   height: 17px;
 }
 
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: -10px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo img {
+  width: min(520px, 65%);
+  height: auto;
+  object-fit: contain;
+
+  /* clave para PNG sin fondo */
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.35));
+
+  pointer-events: none;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1180px) {
