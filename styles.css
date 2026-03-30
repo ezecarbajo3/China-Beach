@@ -3,7 +3,6 @@
   --bg-deep: #5f4035;
   --bg-soft: #7d5848;
   --surface: rgba(37, 21, 16, 0.42);
-  --surface-strong: rgba(30, 17, 13, 0.58);
   --border: rgba(255, 240, 225, 0.12);
   --text: #f7f0e8;
   --muted: #eadcca;
@@ -167,12 +166,12 @@ a {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 41px; /* +20% spacing */
+  gap: 41px;
   font-weight: 700;
 }
 
 .nav-links a {
-  font-size: 1.5rem; /* +50% tamaño */
+  font-size: 1.5rem;
 }
 
 .nav-links a:hover {
@@ -649,6 +648,10 @@ main .section:nth-of-type(even) {
     gap: 18px;
   }
 
+  .nav-links a {
+    font-size: 1.05rem;
+  }
+
   .hero-content {
     padding-top: 76px;
   }
@@ -665,11 +668,11 @@ main .section:nth-of-type(even) {
   }
 
   .whatsapp-float,
-.maps-float {
-  min-height: 39px;
-  padding: 0 14px;
-  font-size: 0.775rem;
-}
+  .maps-float {
+    min-height: 39px;
+    padding: 0 14px;
+    font-size: 0.775rem;
+  }
 
   .whatsapp-float {
     right: 18px;
@@ -682,10 +685,10 @@ main .section:nth-of-type(even) {
   }
 
   .float-icon,
-.float-icon svg {
-  width: 13px;
-  height: 13px;
-}
+  .float-icon svg {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 @media (max-width: 640px) {
