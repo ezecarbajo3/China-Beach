@@ -51,11 +51,18 @@ a {
 /* TOPBAR */
 
 .topbar {
-  position: relative; /* 🔥 deja de ser sticky */
+  position: relative;
   z-index: 40;
   background: rgba(50, 29, 22, 0.72);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
+}
+
+@media (min-width: 901px) {
+  .topbar {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .topbar-inner {
