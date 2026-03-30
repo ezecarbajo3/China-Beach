@@ -784,4 +784,38 @@ main .section:nth-of-type(even) {
 .hero * {
   animation: none !important;
 }
+  /* CONTACT SIMPLIFIED */
+.contact-simple {
+  display: grid;
+  gap: 28px;
+}
+
+.contact-copy-full {
+  max-width: 920px;
+}
+
+.contact-cards-two {
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-top: 0;
+}
+
+.contact-cards-two .contact-card {
+  min-height: 260px;
+}
+
+.contact-cards-two .contact-card h3 {
+  font-size: 1.9rem;
+  line-height: 1.15;
+}
+
+/* BIGGER WHATSAPP BUTTON */
+.whatsapp-float {
+  min-height: 74px;
+  padding: 0 34px;
+  font-size: 1.9rem;
+  border-radius: 999px;
+  right: 28px;
+  bottom: 28px;
+}
 }
