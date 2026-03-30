@@ -703,9 +703,10 @@ main .section:nth-of-type(even) {
 .menu-full-layout,
 .menu-preview-grid,
 .reviews-grid,
-.about-grid-full {
+.about-grid-full,
+.contact-cards-two {
   grid-template-columns: 1fr;
-}  .topbar-inner,
+}.topbar-inner,
   .navbar {
     display: flex;
     flex-direction: column;
