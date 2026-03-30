@@ -624,7 +624,8 @@ main .section:nth-of-type(even) {
   justify-content: center;
   align-items: center;
 
-  margin: 40px 0; /* equilibrio real */
+  margin-top: 40px;
+  margin-bottom: 5px; /* 🔥 antes 40px → ahora casi pegado */
 
   position: relative;
   z-index: 2;
@@ -632,8 +633,14 @@ main .section:nth-of-type(even) {
 
 .hero-logo img {
   width: min(520px, 65%);
-  transform: scale(1.4); /* zoom para eliminar aire */
+  transform: scale(1.4);
 }
+
+/* 🔥 esto termina de cerrar el gap con el texto */
+.hero-content {
+  padding-top: 50px; /* antes mucho más grande */
+}
+
 .menu-full-button-wrap {
   display: flex;
   justify-content: center;
