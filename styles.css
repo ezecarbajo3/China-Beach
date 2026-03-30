@@ -634,7 +634,18 @@ main .section:nth-of-type(even) {
 
   pointer-events: none;
 }
+.menu-full-button-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
 
+.btn-menu-full {
+  min-height: 64px;
+  min-width: 420px;
+  padding: 0 48px;
+  font-size: 1.3rem;
+}
 /* RESPONSIVE */
 
 @media (max-width: 1180px) {
