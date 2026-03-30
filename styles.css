@@ -749,7 +749,10 @@ main .section:nth-of-type(even) {
 
   .hero-content {
     text-align: left;
-  }
+  }.btn-menu-full {
+  min-width: 100%;
+  font-size: 1.1rem;
+}
 }/* SCROLL REVEAL ANIMATIONS */
 .reveal {
   opacity: 0;
