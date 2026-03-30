@@ -294,9 +294,44 @@ a {
 }
 
 .section {
+  position: relative;
   padding: 92px 0;
+  overflow: hidden;
 }
 
+main .section:nth-of-type(odd) {
+  background:
+    linear-gradient(rgba(96, 63, 49, 0.95), rgba(96, 63, 49, 0.95)),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 240, 220, 0.025) 0px,
+      rgba(255, 240, 220, 0.025) 2px,
+      rgba(55, 28, 18, 0.03) 2px,
+      rgba(55, 28, 18, 0.03) 10px
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 225, 190, 0.04),
+      rgba(20, 10, 6, 0.08)
+    );
+}
+
+main .section:nth-of-type(even) {
+  background:
+    linear-gradient(rgba(74, 47, 37, 0.96), rgba(74, 47, 37, 0.96)),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 240, 220, 0.018) 0px,
+      rgba(255, 240, 220, 0.018) 1px,
+      rgba(35, 18, 12, 0.03) 1px,
+      rgba(35, 18, 12, 0.03) 7px
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 222, 181, 0.03),
+      rgba(20, 10, 6, 0.07)
+    );
+}
 .section-grid,
 .location-grid,
 .contact-grid,
