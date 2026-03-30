@@ -804,6 +804,11 @@ body,
   justify-content: center;
   align-items: center;
 }
+
+  /* 🔥 empuja TODO el contenido debajo de la navbar */
+.hero {
+  padding-top: 200px !important;
+}
   
 }
 @media (max-width: 640px) {
