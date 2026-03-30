@@ -827,6 +827,7 @@ main .section:nth-of-type(even) {
   font-size: 2.25rem;
   font-weight: 800;
   box-shadow: 0 20px 40px rgba(15, 32, 17, 0.24);
+  text-decoration: none;
 }
 
 .whatsapp-float {
@@ -839,8 +840,8 @@ main .section:nth-of-type(even) {
 .maps-float {
   left: 28px;
   bottom: 28px;
-  background: #f3d58f;
-  color: #342015;
+  background: #ffffff;
+  color: #1f1f1f;
 }
 
 .float-icon {
@@ -855,7 +856,8 @@ main .section:nth-of-type(even) {
   width: 34px;
   height: 34px;
   display: block;
-}.contact-simple {
+}
+  .contact-simple {
   width: 100%;
 }
 
