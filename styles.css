@@ -207,13 +207,34 @@ a {
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  isolation: isolate;
   max-width: 980px;
   margin: 0 auto;
   padding: 110px 0 92px;
   text-align: center;
 }
 
+.hero-content h1,
+.hero-content h2,
+.hero-description,
+.hero-actions,
+.hero-tags,
+.hero-content .eyebrow {
+  position: relative;
+  z-index: 2;
+  filter: none !important;
+}
+
+.hero-content h1::before,
+.hero-content h1::after,
+.hero-content h2::before,
+.hero-content h2::after,
+.hero-description::before,
+.hero-description::after {
+  content: none !important;
+  display: none !important;
+}
 .hero-content h1,
 .section-heading h2,
 .about-copy h2,
