@@ -661,11 +661,11 @@ main .section:nth-of-type(even) {
   }
 
   .whatsapp-float,
-  .maps-float {
-    min-height: 78px;
-    padding: 0 28px;
-    font-size: 1.55rem;
-  }
+.maps-float {
+  min-height: 39px;
+  padding: 0 14px;
+  font-size: 0.775rem;
+}
 
   .whatsapp-float {
     right: 18px;
